@@ -1,0 +1,67 @@
+===Database bank
+
+== Table structure for table account
+
+|------
+|Column|Type|Null|Default
+|------
+|//**UUID**//|varchar(10)|No|
+|holderUUID|varchar(6)|No|
+|acctType|varchar(10)|No|
+== Dumping data for table account
+
+|0849397563|190503|Saving
+|2374012356|941212|Checking
+|4956418171|673412|Checking
+|5049129702|190503|Checking
+|6845019381|859266|Saving
+|7404937111|941212|Checking
+|7645051783|941212|Saving
+|8878790312|857506|Saving
+|9530560476|190503|Checking
+|9890492580|983606|Saving
+== Table structure for table transaction
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(255)|No|
+|acctUUID|varchar(10)|No|
+|amount|decimal(8,2)|No|
+|memo|varchar(150)|No|
+|date|datetime|No|current_timestamp()
+== Dumping data for table transaction
+
+|1|0849397563|5000.00|Initial Deposit.|2021-04-08 00:16:44
+|2|2374012356|21.80|Initial Deposit.|2021-04-08 00:16:44
+|3|4956418171|0.00|Initial Deposit.|2021-04-08 00:16:44
+|4|5049129702|400.00|Initial Deposit.|2021-04-08 00:16:44
+|5|6845019381|542.00|Initial Deposit.|2021-04-08 00:16:44
+|6|7404937111|12000.00|Initial Deposit.|2021-04-08 00:16:44
+|7|7645051783|6000.00|Initial Deposit.|2021-04-08 00:16:44
+|8|8878790312|200.97|Initial Deposit.|2021-04-08 00:16:44
+|9|9530560476|4502.00|Initial Deposit.|2021-04-08 00:16:44
+|10|9890492580|927.50|Initial Deposit.|2021-04-08 00:16:44
+|11|7404937111|-250.00|Bought paint for office.|2021-04-10 17:59:00
+|14|7645051783|5000.00|Payday!|2021-04-10 22:40:39
+|15|2374012356|-520.00|Loan to Max.|2021-04-10 22:45:59
+|16|7645051783|-400.00|Tranfer to account 2374012356|2021-04-10 22:48:00
+|17|2374012356|400.00|Tranfer from account 7645051783|2021-04-10 22:48:00
+== Table structure for table user
+
+|------
+|Column|Type|Null|Default
+|------
+|//**UUID**//|varchar(6)|No|
+|firstName|varchar(30)|No|
+|lastName|varchar(30)|No|
+|PIN|varchar(6)|No|
+|email|varchar(30)|No|
+== Dumping data for table user
+
+|190503|Trisha|Yates|751287|trish_yates@mssn.com
+|673412|Ashdon|Pierre|443210|ashpierre22@gemail.com
+|857506|Ayesha|Zaman|982261|ayzaman@mssn.com
+|859266|Simon|Chuff|872220|simon.chuff@yehoo.com
+|941212|Abid|Chowdhury|498320|abchd@gemail.com
+|983606|Salwa|Jamil|095611|slajam@gemail.com
