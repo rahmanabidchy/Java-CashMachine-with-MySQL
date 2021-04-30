@@ -18,5 +18,5 @@ User can do the following tasks with the CashMachine
 * 2 Accounts: Checking, Saving
 * Each account has: id, holder_id, account_Type
 
-### Traansaction
+### Transaction
 * Each transaction has: account_id, amount, memo, date 
